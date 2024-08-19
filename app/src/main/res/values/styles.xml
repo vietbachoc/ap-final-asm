@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/styles.xml -->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Custom style for BottomNavigationView -->
+    <style name="CustomBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="android:background">#FFA500</item> <!-- Orange background -->
+        <item name="itemTextColor">@color/bottom_nav_text_color</item>
+        <item name="itemIconTint">@color/bottom_nav_icon_color</item>
+
+    </style>
+
+    <!-- Text color state list for BottomNavigationView items -->
+    <color name="bottom_nav_text_color">
+        <selector>
+            <item android:color="#FFFFFF" android:state_checked="true"/> <!-- White color when selected -->
+            <item android:color="#FFFFFF"/> <!-- White color when not selected -->
+        </selector>
+    </color>
+
+    <!-- Icon color state list for BottomNavigationView items -->
+    <color name="bottom_nav_icon_color">
+        <selector>
+            <item android:color="#FFFFFF" android:state_checked="true"/> <!-- White color when selected -->
+            <item android:color="#FFFFFF"/> <!-- White color when not selected -->
+        </selector>
+    </color>
+    <style name="BottomNavTextAppearance">
+        <item name="android:textSize">16sp</item> <!-- Adjust text size as needed -->
+        <item name="android:textStyle">bold</item> <!-- Make text bold -->
+    </style>
+</resources>
